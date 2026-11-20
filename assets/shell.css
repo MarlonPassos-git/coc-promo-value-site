@@ -1,0 +1,162 @@
+@font-face {
+  font-family: PublicClash;
+  src: url("../tiers/art/clash.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: PublicText;
+  src: url("../tiers/art/text.woff2") format("woff2");
+  font-display: swap;
+}
+body:has(.public-header) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  max-width: none;
+  max-inline-size: none;
+  margin: 0;
+  padding: 0;
+  background: #faf4e9;
+  color: #302019;
+}
+.public-header {
+  background: #deceba url("./topbar.png") bottom / auto 100% repeat-x;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+  color: #191919;
+}
+.public-bar {
+  min-height: 104px;
+  max-width: 1560px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font:
+    1rem / 1.2 PublicText,
+    system-ui,
+    sans-serif;
+}
+.public-brand {
+  display: grid;
+  text-align: center;
+  text-decoration: none;
+  font:
+    500 0.88rem / 1 PublicClash,
+    system-ui,
+    sans-serif;
+  color: #4d2e17;
+}
+.public-brand strong {
+  font:
+    500 1.5rem / 1.1 PublicClash,
+    system-ui,
+    sans-serif;
+  color: white;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 2px #191919;
+  text-shadow: 0 2px #191919;
+}
+.public-game small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+.store-link {
+  margin-left: auto;
+  background: #f0f0f0;
+  border: 2px solid #17120e;
+  border-radius: 8px;
+  padding: 0.75rem 1.2rem;
+  color: #191919;
+  text-decoration: none;
+  font-weight: bold;
+}
+.store-link:hover {
+  background: white;
+}
+.public-footer {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto 0 0;
+  padding: 2rem max(1.25rem, calc((100% - 64rem) / 2));
+  background: #101010;
+  color: #fff;
+  font:
+    1rem / 1.5 PublicText,
+    system-ui,
+    sans-serif;
+  clip-path: none;
+  box-shadow: none;
+}
+.public-footer > div,
+.public-footer nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.3rem;
+  padding: 0;
+}
+.public-footer > div {
+  justify-content: space-between;
+}
+.public-footer nav a {
+  display: inline-block;
+  color: white;
+  padding: 0.3rem 0;
+  margin: 0;
+  text-underline-offset: 0.2em;
+}
+.public-footer small {
+  display: block;
+  margin-top: 0.6rem;
+  color: #ccc;
+}
+@media (max-width: 42rem) {
+  .public-bar {
+    gap: 1rem;
+    min-height: 84px;
+  }
+  .public-brand strong {
+    font-size: 1.1rem;
+  }
+  .public-brand span {
+    font-size: 0.72rem;
+  }
+  .store-link {
+    padding: 0.55rem 0.75rem;
+  }
+}
+@media (max-width: 30rem) {
+  .public-game {
+    font-size: 0.8rem;
+  }
+  .public-game small {
+    font-size: 0.68rem;
+  }
+  .public-bar {
+    gap: 0.55rem;
+  }
+  .store-link {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 22rem) {
+  .public-bar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4rem;
+    padding: 0.7rem 0 1rem;
+  }
+  .public-game {
+    order: 3;
+    flex-basis: 100%;
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+  }
+  .public-game small {
+    margin: 0;
+  }
+}
