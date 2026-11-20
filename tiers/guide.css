@@ -217,9 +217,11 @@ small {
   font-size: 0.9rem;
 }
 footer {
-  border-top: 1px solid #d4bdab;
-  padding-block: 1rem 2rem;
-  color: #624b37;
+  background: #101010;
+  box-shadow: 0 0 0 100vmax #101010;
+  clip-path: inset(0 -100vmax);
+  padding-block: 1.5rem;
+  color: #eee;
   font-size: 0.85rem;
 }
 @media (max-width: 48rem) {
@@ -261,4 +263,9 @@ footer {
     gap: 0.4rem 0.75rem;
     font-size: 0.88rem;
   }
+}
+
+footer a,
+footer a:hover {
+  color: white;
 }

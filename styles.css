@@ -57,10 +57,14 @@ figcaption {
   max-width: 48rem;
 }
 footer {
-  border-top: 1px solid #d4bdab;
-  padding-top: 1rem;
+  background: #101010;
+  color: #fff;
+  box-shadow: 0 0 0 100vmax #101010;
+  clip-path: inset(0 -100vmax);
+  padding-block: 1.5rem;
 }
 footer a {
+  color: #fff;
   display: inline-block;
   margin-inline-end: 1rem;
 }
