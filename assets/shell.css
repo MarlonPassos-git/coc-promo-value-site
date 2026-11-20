@@ -21,7 +21,7 @@ body:has(.public-header) {
   color: #302019;
 }
 .public-header {
-  background: #deceba url("./topbar.png") bottom / auto 100% repeat-x;
+  background: transparent url("./topbar.png") bottom / auto 100% repeat-x;
   padding: 0 clamp(1rem, 4vw, 3rem);
   color: #191919;
 }
