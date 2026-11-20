@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Entenda as faixas S a F nas ofertas de Clash of Clans e acompanhe o cálculo de um pacote com um livro e duas runas.">
+    <title>Como funcionam os tiers | Comparador de progresso</title>
+    <link rel="icon" href="../assets/icon.png">
+    <link rel="stylesheet" href="./palette.css">
+    <link rel="stylesheet" href="./guide.css">
+  </head>
+  <body>
+    <nav aria-label="Navegação do site">
+      <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36">Comparador de progresso</a>
+      <a href="../calculadora/">Calculadora</a>
+    </nav>
+    <main>
+      <header class="intro">
+        <div>
+          <h1>Como funcionam os tiers</h1>
+          <p>A letra na oferta mostra quanto custariam os mesmos itens se você os comprasse com gemas. Quanto maior o multiplicador, mais você economiza no pacote.</p>
+        </div>
+        <img class="gem-chest" src="./art/gems.avif" width="279" height="260" alt="">
+      </header>
+      <div class="guide-body">
+        <section aria-labelledby="faixas">
+          <h2 id="faixas">De S a F</h2>
+          <p>Divida o valor dos itens via gemas pelo preço da oferta. Em <strong>1×</strong>, os dois preços são iguais.</p>
+          <table aria-labelledby="faixas">
+            <thead><tr><th scope="col">Tier</th><th scope="col">Multiplicador</th></tr></thead>
+            <tbody>
+              <tr class="pv-tier-palette" data-tier="S"><th scope="row"><span class="shield">S</span></th><td><strong>3× ou mais</strong><small>A oferta custa um terço do valor dos itens ou menos.</small></td></tr>
+              <tr class="pv-tier-palette" data-tier="A"><th scope="row"><span class="shield">A</span></th><td><strong>De 2× a menos de 3×</strong><small>Você economiza pelo menos metade do valor dos itens.</small></td></tr>
+              <tr class="pv-tier-palette" data-tier="B"><th scope="row"><span class="shield">B</span></th><td><strong>De 1,5× a menos de 2×</strong><small>A economia vai de um terço a menos da metade.</small></td></tr>
+              <tr class="pv-tier-palette" data-tier="C"><th scope="row"><span class="shield">C</span></th><td><strong>De 1× a menos de 1,5×</strong><small>O preço é igual ou a economia fica abaixo de um terço.</small></td></tr>
+              <tr class="pv-tier-palette" data-tier="D"><th scope="row"><span class="shield">D</span></th><td><strong>De 0,75× a menos de 1×</strong><small>A oferta custa até um terço a mais que os itens via gemas.</small></td></tr>
+              <tr class="pv-tier-palette" data-tier="F"><th scope="row"><span class="shield">F</span></th><td><strong>Abaixo de 0,75×</strong><small>A oferta custa mais de um terço acima da referência.</small></td></tr>
+            </tbody>
+          </table>
+          <p class="note">A letra só aparece quando há preço para a oferta, referência de gemas na mesma moeda e região e valor conhecido para todos os itens considerados no foco escolhido.</p>
+        </section>
+        <section class="example" aria-labelledby="exemplo">
+          <h2 id="exemplo">Um livro e duas runas</h2>
+          <p>Veja de onde sai o tier de uma oferta de <strong>R$ 21,90</strong> no CV 19, considerando a revenda das runas.</p>
+          <ul class="inventory">
+            <li><img src="./art/book-hero.avif" width="40" height="48" alt=""><span>Livro dos Heróis<small>Preço no Mercador</small></span><strong>500 gemas</strong></li>
+            <li><img src="./art/rune-gold.avif" width="40" height="48" alt=""><span>Runa de Ouro<small>Revenda</small></span><strong>50 gemas</strong></li>
+            <li><img src="./art/rune-elixir.webp" width="40" height="48" alt=""><span>Runa de Elixir<small>Revenda</small></span><strong>50 gemas</strong></li>
+          </ul>
+          <div class="total"><strong>Total dos itens</strong><strong>600 gemas</strong></div>
+          <p>Com 15.000 gemas a R$ 184,90, as 600 gemas representam <strong>R$ 7,40</strong> desse pacote.</p>
+          <div class="result pv-tier-palette" data-tier="F">
+            <span class="shield" role="img" aria-label="Tier F">F</span>
+            <div><strong>R$ 7,40 ÷ R$ 21,90 ≈ 0,34×</strong><p>A oferta custa <b>196% mais</b> que os itens via gemas.</p></div>
+          </div>
+          <p class="note">No mesmo exemplo, o livro pode poupar até 192 h de melhoria de herói. Essas horas entram no custo por hora. O tier usa o valor do livro em gemas.</p>
+        </section>
+      </div>
+    </main>
+    <footer>Ferramenta de fãs independente, sem endosso da Supercell. <a href="../privacidade/">Privacidade</a></footer>
+  </body>
+</html>
